@@ -4,7 +4,7 @@
 Seditio - Website engine
 Copyright Neocrome & Seditio Team
 http://www.neocrome.net
-http://www.seditio.org
+https://www.seditiocms.com
 [BEGIN_SED]
 File=system/core/list/list.inc.php
 Version=177
