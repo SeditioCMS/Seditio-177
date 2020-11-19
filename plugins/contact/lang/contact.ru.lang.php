@@ -4,7 +4,7 @@
 Seditio - Website engine
 Copyright Neocrome & Seditio Team
 http://www.neocrome.net
-http://www.seditio.org
+http://www.seditiocms.com
 [BEGIN_SED]
 File=plugins/contact/lang/contact.ru.lang.php
 Version=177
