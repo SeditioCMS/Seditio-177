@@ -17,8 +17,7 @@ Description=
 
 
 $L['plu_title'] = "Contact";
-
-
+$L['plu_email_dep'] = "Departman";
 $L['plu_explain'] = "Fill this form to send us an email, we'll reply as soon as possible !";
 $L['plu_recipients_title'] = "Recipient";
 $L['plu_email_title'] = "Email";

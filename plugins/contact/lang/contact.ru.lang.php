@@ -17,8 +17,7 @@ Description=Перевод на могучий - Антонио [antony.ldu.ru]
 
 
 $L['plu_title'] = "Контакт";
-
-
+$L['plu_email_dep'] = "Departman";
 $L['plu_explain'] = "Заполни эту форму чтобы отправить письмо : ";
 $L['plu_recipients_title'] = "Получатель";
 $L['plu_email_title'] = "Электропочта";
