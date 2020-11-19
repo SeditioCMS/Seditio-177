@@ -1,6 +1,37 @@
 # Seditio CMS 177 PHP 7 ve üst versionları için güncelleme yapıldı.
 https://www.seditiocms.com
 
+Seditio ücretsiz bir web site yaratma ve yönetme çözümüdür. Seditio'dan kimler ne şekilde yararlanabilir?
+
+# Webmasterlar
+
+Temel ihtiyaçlarınızn tamamına sahiptir.
+Özel ihtiyaca yönelik fonksiyonları eklentilerle sitenize ekleyebilirsiniz.
+Terzi elinden çıkmışçasına istediğiniz tür siteye uyarlayabilirsiniz.
+Düşük kaynak tüketir ve hızlı yanıt verir.
+Güvenliğe odaklı yapısıyla siteniz daha iyi korunur.
+
+# Geliştiriciler
+
+Açık kaynaklıdır ve kullanıcı topluluğu tarafından geliştirilir.
+Yalın, anlaşılması kolay kod yapısı ve kolay API'ler.
+Sizi hiçbir şekilde kısıtlamayan alt yapısını dilediğiniz gibi kullanın.
+Gerek duyulduğunda tüm sistem davranışları kontrol edilebilinir.
+Temel kısımlar özenle dokümente edilmiştir, geri kalan kısım da anlaması gayet kolaydır.
+ 
+# Tasarımcılar
+
+Güçlü tema motorunda gömülü yapı blokları, mantıksal karşılaştırmalar ve iletişim kanalı işlemcilerine sahiptir.
+PHP bilmenize gerek yok sadece HTML/CSS ve birkaç kontrol yapısı.
+Varsayılan temayı veya 3. parti temaları dilediğiniz gibi düzenleyip tekrar kullanın.
+Tasarım, stil dosyası, kaynak stringli ve ya tema değişikliği yapılarak her yönüyle düzenlenebilinir.
+
+# Şirketler
+
+Aşırı yükleme durumlarına bile dayanabilir, sürekli içerik değiştiren sistemlere uygundur.
+Veritabanı ve sunucu sayısına bağlı olarak adaptasyon sağlayabilir.
+
+
 # Seditio PHP kodlama dili ile yazılmış, MySQL veritabanı ile kullanılan eklentiler ile geliştirilebilen ücretsiz bir forum sistemidir.
 Olivier 'Neuro' Chapuis. ve ekibi tarafından kodlanarak kullanıma sunulan forum paketi, yapımcı grubun güvenlik ağırlıklı güncelleştirilen versiyonları ve gönüllü destekçilerin yaptıkları tema ve eklentilerle eksikliklerini büyük ölçüde tamamlamıştır.
 
