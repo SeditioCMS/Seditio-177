@@ -18,7 +18,7 @@ Description=
 
 $L['plu_title'] = "İletişim";
 
-
+$L['plu_email_dep'] = "Departman";
 $L['plu_explain'] = "Bize e-posta göndermek için bu formu doldurun, biz mümkün olan en kısa sürede cevap vereceğiz !";
 $L['plu_recipients_title'] = "Alıcı";
 $L['plu_email_title'] = "Email";
