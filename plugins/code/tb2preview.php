@@ -91,7 +91,8 @@ function textboxer_smilies(){
 		$count=0;
 		$result2="";
 
-		while (list($i,$dat) = each($sed_smilies)){
+		foreach($sed_smilies as $i => $dat) /*** php 7 repair ***/
+		{
 			$smilie_image = str_replace("'","\\'",str_replace("\\","\\\\",$dat['smilie_image']));
 			$smilie_code = str_replace("'","\\'",str_replace("\\","\\\\",$dat['smilie_code']));
 			$smilie_text = str_replace("'","\\'",str_replace("\\","\\\\",$dat['smilie_text']));

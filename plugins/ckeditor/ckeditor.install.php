@@ -4,7 +4,7 @@
 Seditio - Website engine
 Copyright Neocrome & Seditio Team
 http://www.neocrome.net
-http://www.seditio.org
+http://www.seditiocms.com
 
 [BEGIN_SED]
 File=plugins/ckeditor/ckeditor.install.php
@@ -19,12 +19,12 @@ Description=
 
 if (!defined('SED_CODE') || !defined('SED_ADMIN')) { die('Wrong URL.'); }
 
-foreach($sed_groups as $k => $v)
+foreach($sed_groups as $k => $vx)
   {
-  if ($v['id']>3)
+  if ($vx['id']>3)
     {
     //$value = ($v['id']==5) ? 'Extended' : 'Default';    
-    sed_config_add('plug', 'ckeditor', 99, 'ckeditor_grp'.$v['id'], 'select', 'Default', 'Default,Micro,Basic,Extended,Full', "Global toolbar for the group '".$v['title']);
+    sed_config_add('plug', 'ckeditor', 99, 'ckeditor_grp'.$vx['id'], 'select', 'Default', 'Default,Micro,Basic,Extended,Full', "Global toolbar for the group '".$vx['title']);
     }
   }
 

@@ -4,7 +4,7 @@
 Seditio - Website engine
 Copyright Neocrome & Seditio Team
 http://www.neocrome.net
-http://www.seditio.org
+http://www.seditiocms.com
 [BEGIN_SED]
 File=plugins/textboxer2/inc/textboxer2.inc.php
 Version=130
@@ -225,42 +225,6 @@ function sed_textboxer2($name, $formname, $content, $rows, $cols, $loc="unknown"
 
 	$xtraJS="";
 
-//Here is an sample how to add your own javascript functions to tb2.
-/*
-	$xtraJS = '
-function xtra_wordcount(){
-	function delEmpty(arr){
-		rarr=new Array();
-		for(i in arr){
-			var a=wipe(arr[i]," ","");
-			if(a!=""){rarr.push(arr[i]);}
-		}
-		return rarr;
-	}
-	function wipe(txt,rem,rep){return txt.split(rem).join(rep);}
-
-	if(o=dg(tbName)){
-		txt=o.value;
-		var charc=wipe(txt,"\r\n"," ").length;
-		var words=delEmpty(wipe(wipe(txt,"\r\n"," "),"\n"," ").split(" "));
-		var lines=delEmpty(wipe(txt,"\r\n","\n").split("\n"));
-		var avrcpw = words.join("").length/words.length;
-		var linew=0;
-		for(i in lines){linew+=delEmpty(lines[i].split(" ")).length;}
-		var avrwpl=linew/lines.length;
-		var wordc=words.length;
-		var linec=lines.length;
-		var bbc=txt.split("[").length-txt.split("[/").length;
-		alert("Statistics from textarea:"+
-			"\n  Characters: "+charc+
-			"\n  Words: "+wordc+
-			"\n  Rows: "+linec+
-			"\n  bbcodes: "+bbc+
-			"\n  Average chars per word: "+Math.round(avrcpw*100)/100+
-			"\n  Average words per row: "+Math.round(avrwpl*100)/100);
-	}
-}';*/
-
 
 	$result = '
 <link href="'.$textboxer_themeurl.'layout.css" type="text/css" rel="stylesheet" />
@@ -371,7 +335,7 @@ function tb2_jscode($tb2Buttons,$initialSmiliesCount){
 			if (is_array($sed_smilies)){
 				$count=0;
 				reset ($sed_smilies);
-				while (list($i,$dat) = each($sed_smilies)){
+				foreach($sed_smilies as $i => $dat){ /* php 7 repair */
 					if($count<$initialSmiliesCount){
 						$smilie_image = str_replace("'","\\\\'",str_replace("\\","\\\\\\\\",$dat['smilie_image']));
 						$smilie_code = str_replace("'","\\\\'",str_replace("\\","\\\\\\\\\\\\\\\\",$dat['smilie_code']));
@@ -419,7 +383,7 @@ function tb2_htmlcode($tb2Buttons,$initialSmiliesCount){
 			if (is_array($sed_smilies)){
 				$count=0;
 				reset ($sed_smilies);
-				while (list($i,$dat) = each($sed_smilies)){
+				foreach($sed_smilies as $i => $dat){ /* php 7 repair */
 					if($count<$initialSmiliesCount){
 						$smilie_text = str_replace('"','\\\\"',str_replace("\\","\\\\\\\\",$dat['smilie_text']));
 						array_push($result,'<li><a href="javascript:none();" id="tb_sm_'.$count.'"><img src="'.$dat['smilie_image'].'" alt="'.$smilie_text.'" /></a></li>');

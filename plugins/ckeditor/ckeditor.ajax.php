@@ -3,7 +3,7 @@
 Seditio - Website engine
 Copyright Neocrome & Seditio Team
 http://www.neocrome.net
-http://www.seditio.org
+http://www.seditiocms.com
 
 [BEGIN_SED]
 File=plugins/ckeditor/ckeditor.ajax.php
