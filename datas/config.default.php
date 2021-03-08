@@ -39,7 +39,7 @@ $cfg['defaultlang'] = 'en';			// Default language code
 // ========================
 
 $cfg['sqldbprefix'] = 'sed_';			// Database tables prefix
-$cfg['sqldb'] = 'mysql';  				// Type of the database engine.
+$cfg['sqldb'] = 'mysqli';  				// Type of the database engine.
 $cfg['site_secret'] = ''; 					// Site secret key
 $cfg['authmode'] = 3; 					// (1:cookies, 2:sessions, 3:cookies+sessions) default=3
 $cfg['redirmode'] = FALSE;				// 0 or 1, Set to '1' if you cannot sucessfully log in (IIS servers)
